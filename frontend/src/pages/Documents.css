@@ -1,0 +1,49 @@
+.documents-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.action-buttons .btn {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+/* تخصيص أيقونات أنواع الملفات */
+.fa-file-pdf { color: #dc2626; }
+.fa-file-image { color: #16a34a; }
+.fa-file-word { color: #2563eb; }
+.fa-file { color: #6b7280; }
+
+/* تخصيص الـ Badges */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+  border-radius: 6px;
+}
+
+/* تخصيص الجدول */
+.table th {
+  border-top: none;
+  font-weight: 600;
+  color: #495057;
+  background-color: #f8f9fa;
+  padding: 1rem 0.75rem;
+}
+
+.table td {
+  padding: 1rem 0.75rem;
+  vertical-align: middle;
+}
+
+/* تخصيق الـ Modal */
+.modal-header {
+  border-bottom: 2px solid #e9ecef;
+}
+
+.modal-footer {
+  border-top: 2px solid #e9ecef;
+}

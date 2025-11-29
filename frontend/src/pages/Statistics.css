@@ -1,0 +1,193 @@
+.statistics-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.stat-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.stat-icon.revenue {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.stat-icon.files {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.stat-icon.clients {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.stat-icon.commission {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* تنسيق جدول العملاء */
+.client-name {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.recovery-rate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rate.high { color: #10b981; font-weight: 600; }
+.rate.medium { color: #f59e0b; font-weight: 600; }
+.rate.low { color: #ef4444; font-weight: 600; }
+
+.progress-bar.high { background-color: #10b981; }
+.progress-bar.medium { background-color: #f59e0b; }
+.progress-bar.low { background-color: #ef4444; }
+
+/* الإحصائيات الشهرية */
+.monthly-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.month-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.month-name {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.data-row {
+  display: flex;
+  justify-content: between;
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.data-row .label {
+  color: #6b7280;
+  flex: 1;
+}
+
+.data-row .value {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* توزيع الحالات */
+.status-distribution {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.status-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-dot.new { background-color: #3b82f6; }
+.status-dot.in-progress { background-color: #f59e0b; }
+.status-dot.paid { background-color: #10b981; }
+.status-dot.partially-paid { background-color: #06b6d4; }
+.status-dot.closed { background-color: #6b7280; }
+
+.status-count {
+  font-weight: 600;
+  color: #374151;
+}
+
+/* ملخص المهام */
+.tasks-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-info i {
+  font-size: 1.25rem;
+}
+
+.task-count {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .monthly-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+  }
+}

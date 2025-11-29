@@ -1,0 +1,193 @@
+.login-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.login-card {
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login-card .card-body {
+  padding: 3rem !important;
+}
+
+.login-logo {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  border-radius: 20px;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.login-title {
+  color: var(--primary-blue);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  color: var(--gray-dark);
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* تحسين حقول الإدخال */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  display: block;
+}
+
+.form-control, .form-select {
+  border-radius: 12px;
+  padding: 16px 20px;
+  border: 2px solid #e2e8f0;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  background: var(--white);
+  width: 100%;
+  height: auto;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--secondary-blue);
+  box-shadow: 0 0 0 0.3rem rgba(59, 130, 246, 0.15);
+  background: var(--white);
+  transform: translateY(-2px);
+}
+
+.form-control::placeholder {
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+/* تحسين الزر */
+.login-btn {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+  border: none;
+  padding: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.login-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.4);
+}
+
+.login-btn:disabled {
+  background: var(--gray-dark);
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* تحسين التنبيهات */
+.alert {
+  border-radius: 12px;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.alert-danger {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* النص في الأسفل */
+.text-muted {
+  color: var(--gray-dark) !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* السبينر */
+.spinner-border-sm {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px 15px;
+  }
+  
+  .login-card .card-body {
+    padding: 2.5rem !important;
+  }
+  
+  .login-title {
+    font-size: 1.8rem;
+  }
+  
+  .login-subtitle {
+    font-size: 1rem;
+  }
+  
+  .form-control, .form-select {
+    padding: 14px 16px;
+    font-size: 1rem;
+  }
+  
+  .login-btn {
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-card .card-body {
+    padding: 2rem !important;
+  }
+  
+  .login-title {
+    font-size: 1.6rem;
+  }
+  
+  .login-logo {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+}

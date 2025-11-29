@@ -1,0 +1,48 @@
+.tasks-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.filter-buttons .btn {
+  border-radius: 20px;
+  font-size: 0.875rem;
+}
+
+.action-buttons .btn {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.table th {
+  border-top: none;
+  font-weight: 600;
+  color: #495057;
+  background-color: #f8f9fa;
+  padding: 1rem 0.75rem;
+}
+
+.table td {
+  padding: 1rem 0.75rem;
+  vertical-align: middle;
+}
+
+/* تخصيص الـ Badges للمهام */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.5em 0.75em;
+  border-radius: 6px;
+}
+
+/* تخصيص تواريخ الاستحقاق المتأخرة */
+.text-danger {
+  font-weight: 600;
+}
+
+/* تخصيص الروابط */
+a.text-decoration-none:hover {
+  text-decoration: underline !important;
+}

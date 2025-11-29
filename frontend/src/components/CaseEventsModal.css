@@ -1,0 +1,51 @@
+.event-upcoming {
+  border-left: 4px solid var(--success);
+}
+
+.event-past {
+  border-left: 4px solid var(--secondary);
+  opacity: 0.8;
+}
+
+.event-details {
+  margin-top: 0.5rem;
+}
+
+.event-details small {
+  font-size: 0.8rem;
+}
+
+/* تخصيص البطاقات */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* تخصيص النصوص */
+.text-muted {
+  color: #6b7280 !important;
+}
+
+/* تخصيص الأزرار */
+.btn-outline-danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--danger);
+  color: white;
+}
+
+/* تخصيص الـ Modal */
+.modal-body {
+  padding: 1.5rem;
+}
+
+/* تخصيص الـ Form */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--secondary-blue);
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}

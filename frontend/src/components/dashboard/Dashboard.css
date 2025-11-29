@@ -1,0 +1,95 @@
+.dashboard-header {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+}
+
+.stat-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+  font-size: 1.25rem;
+}
+
+.task-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.task-item {
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: var(--gray-light);
+}
+
+.table th {
+  border-top: none;
+  font-weight: 600;
+  color: var(--gray-dark);
+  background-color: var(--gray-light);
+}
+
+/* تخصيص الـ Badges */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+}
+
+/* تخصيص الـ Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background: white;
+  border-bottom: 2px solid var(--gray-light);
+  font-weight: 600;
+}
+
+/* تخصيص الـ Buttons */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-blue);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* تخصيص الـ Progress Bars */
+.progress {
+  border-radius: 10px;
+  background-color: var(--gray-light);
+}
+
+.progress-bar {
+  border-radius: 10px;
+}

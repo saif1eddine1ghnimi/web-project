@@ -1,0 +1,45 @@
+.case-types-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* تخصيص الجدول */
+.table th {
+  background-color: #f8f9fa;
+  border-top: none;
+  font-weight: 600;
+  color: #495057;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+/* تخصيص الأزرار */
+.btn-outline-danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--danger);
+  color: white;
+}
+
+/* تخصيص البطاقات */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+  background: white;
+  border-bottom: 2px solid #e9ecef;
+  font-weight: 600;
+}
+
+/* تخصيص النصوص */
+.text-muted {
+  color: #6b7280 !important;
+}
